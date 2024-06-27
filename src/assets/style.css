@@ -167,6 +167,7 @@ svg{
   --background-hover: var(--light-gray-500);
   --background-focus: var(--dieter-orange-50);
   --background-disable: var(--light-gray-50);
+  --box-shadow-color: rgba(149, 157, 165, 0.2);
   --content-1: var(--bolt-black-500);
   --content-2: var(--bolt-black-200);
   --content-3-pair: var(--light-gray-500);
@@ -213,7 +214,7 @@ svg{
 
 :root[data-theme="dark"] {
   /* Variables específicas para el modo oscuro */
-  --background-1: var(--bolt-black-700);
+  --background-1: var(--bolt-black-700);  
   --background-2: var(--bolt-black-500);
   --background-3: var(--dieter-orange-500);
   --background-4: var(--dieter-orange-50);
@@ -221,6 +222,7 @@ svg{
   --background-hover: var(--bolt-black-500);
   --background-focus: var(--dieter-orange-500);
   --background-disable: var(--bolt-black-800);
+  --box-shadow-color: rgba(18, 18, 18, 0.24);
   --content-1: var(--light-gray-500);
   --content-2: var(--light-gray-700);
   --content-3-pair: var(--light-gray-500);
@@ -229,7 +231,7 @@ svg{
   --content-hover: var(--light-gray-100);
   --content-focus: var(--light-gray-500);
   --content-disable: var(--bolt-black-400);
-  --border-1: var(--bolt-black-400);
+  --border-1: var(--bolt-black-800);
   --border-inverse: var(--light-gray-50);
   --border-hover: var(--bolt-black-500);
   --border-focus: var(--dieter-orange-500);
