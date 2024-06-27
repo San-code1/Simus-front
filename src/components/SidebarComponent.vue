@@ -242,7 +242,7 @@
   margin: 12px;
   border: 1px solid var(--border-1);
   border-radius: var(--border-radius-s);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: var(--box-shadow-color) 0px 8px 24px;
 }
 
 .sidebar-container {
