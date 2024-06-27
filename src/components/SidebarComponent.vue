@@ -232,13 +232,16 @@
 
 <style>
 .sidebar {
-  height: 100vh;
+  height: -webkit-fill-available;
   background-color: var(--background-1);
   width: 280px;
   padding: 24px;
   grid-column: 1;
   grid-row: span 2;
   overflow-y: auto;
+  margin: 12px;
+  border: 1px solid var(--border-1);
+  border-radius: var(--border-radius-s);
 }
 
 .sidebar-container {

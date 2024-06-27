@@ -34,8 +34,12 @@
 <style>
 .topbar {
     display: flex;
+    margin: 8px 16px 0px 8px;
     padding: 16px 24px;
     gap: 24px;
+    background-color: var(--background-1);
+    border: 1px solid var(--border-1);
+    border-radius: var(--border-radius-s);
 }
 
 .topbar-resource {

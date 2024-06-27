@@ -13,14 +13,14 @@
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
   height: 100vh;
+  background-color: var(--background-2);
 }
 
 .view {
-  background-color: var(--background-2);
   margin-right: 24px;
   border-radius: var(--border-radius-l) var(--border-radius-l) 0 0;
   display: flex;
-  padding: 24px;
+  padding: 16px;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
