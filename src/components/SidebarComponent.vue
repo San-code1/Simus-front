@@ -232,7 +232,6 @@
 
 <style>
 .sidebar {
-  height: -webkit-fill-available;
   background-color: var(--background-1);
   width: 280px;
   padding: 24px;
