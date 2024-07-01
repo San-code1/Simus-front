@@ -10,7 +10,7 @@ body {
   padding: 0;
   background-color: var(--background-1);
   color: var(--content-1);
-  font-size: var(--body-m);
+  font-size: var(1rem);
   margin: 0;
   padding: 0;
   min-height: 100dvh;
@@ -205,7 +205,7 @@ svg{
   --semantic-warning-hover: var(--yellow-200);
   --semantic-warning-focus: var(--yellow-50);
   --semantic-warning-disable: var(--yellow-50);
-  --semantic-danger: var(--ed-500);
+  --semantic-danger: var(--red-500);
   --semantic-danger-light: var(--red-100);
   --semantic-danger-hover: var(--red-200);
   --semantic-danger-focus: var(--red-100);
@@ -306,11 +306,11 @@ svg{
 }
 
 .content-3 {
-  color: var(--content-3);
+  color: var(--content-3-pair);
 }
 
 .content-4 {
-  color: var(--content-4);
+  color: var(--content-4-pair);
 }
 
 .content-inverse {
