@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   min-width: 0;
   font-family: var(--font-family);
@@ -17,11 +17,13 @@ body {
   scrollbar-color: var(--semantic-hightlight) var(--background-1);
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
   text-wrap: balance;
   margin: 0;
 }
-
 
 ul {
   list-style: none;
@@ -42,7 +44,6 @@ a {
   font-family: var(--font-family);
   font-size: 1rem;
   font-style: normal;
-  font-weight: 500;
   line-height: 150%;
 }
 
@@ -55,19 +56,21 @@ button {
   appearance: none;
 }
 
-hr{
+hr {
   height: 1px;
   background-color: var(--border-1);
   width: 100%;
   border: 0px solid;
 }
 
-svg{
+svg {
   fill: var(--content-1);
 }
 
 /* Variables globales */
 :root {
+  --font-family: "N27";
+  --font-family-bold: "N27-Bold";
   --bolt-black-50: #e9e9e9;
   --bolt-black-100: #babbbc;
   --bolt-black-200: #999b9b;
@@ -138,7 +141,6 @@ svg{
   --red-700: #973737;
   --red-800: #752b2b;
   --red-900: #592121;
-  --font-family: "N27", sans-serif;
   --border-radius-xl: 999px;
   --border-radius-l: 24px;
   --border-radius-m: 16px;
@@ -148,13 +150,19 @@ svg{
 }
 
 @font-face {
-  font-family: var(--font-family);
-  src: url("@/assets/fonts/N27-Bold.woff2") format("woff2");
+  font-family: "N27-Bold";
+  src: url("@/assets/fonts/N27-Bold.woff") format("woff"),
+    url("@/assets/fonts/N27-Bold.woff2") format("woff2"),
+    url("@/assets/fonts/N27-Bold.ttf") format("truetype"),
+    url("@/assets/fonts/N27-Bold.eot") format("embedded-opentype");
 }
 
 @font-face {
-  font-family: var(--font-family);
-  src: url("@/assets/fonts/N27-Medium.woff2") format("woff2");
+  font-family: "N27";
+  src: url("@/assets/fonts/N27-Medium.woff") format("woff"),
+    url("@/assets/fonts/N27-Medium.woff2") format("woff2"),
+    url("@/assets/fonts/N27-Medium.ttf") format("truetype"),
+    url("@/assets/fonts/N27-Medium.eot") format("embedded-opentype");
 }
 
 /* Variables específicas para el modo claro */
@@ -214,7 +222,7 @@ svg{
 
 :root[data-theme="dark"] {
   /* Variables específicas para el modo oscuro */
-  --background-1: var(--bolt-black-700);  
+  --background-1: var(--bolt-black-700);
   --background-2: var(--bolt-black-500);
   --background-3: var(--dieter-orange-500);
   --background-4: var(--dieter-orange-50);
@@ -266,8 +274,6 @@ svg{
   --semantic-danger-focus: var(--red-100);
   --semantic-danger-disable: var(--red-50);
 }
-
-
 
 .background-1 {
   background-color: var(--background-1);
@@ -331,42 +337,42 @@ svg{
 
 /* Text-size styles */
 .display-m {
-  font-family: var(--font-family);
+  font-family: var(--font-family-bold);
   font-size: 3rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 130%;
 }
 
 .display-s {
-  font-family: var(--font-family);
+  font-family: var(--font-family-bold);
   font-size: 2.5rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 130%;
 }
 
 .title-l {
-  font-family: var(--font-family);
+  font-family: var(--font-family-bold);
   font-size: 2rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 140%;
 }
 
 .title-m {
-  font-family: var(--font-family);
+  font-family: var(--font-family-bold);
   font-size: 1.5rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 140%;
 }
 
 .title-s {
-  font-family: var(--font-family);
+  font-family: var(--font-family-bold);
   font-size: 1.25rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 145%;
 }
 
@@ -374,7 +380,6 @@ svg{
   font-family: var(--font-family);
   font-size: 1.25rem;
   font-style: normal;
-  font-weight: 500;
   line-height: 145%;
 }
 
@@ -382,7 +387,6 @@ svg{
   font-family: var(--font-family);
   font-size: 1rem;
   font-style: normal;
-  font-weight: 500;
   line-height: 150%;
 }
 
@@ -390,7 +394,6 @@ svg{
   font-family: var(--font-family);
   font-size: 0.88rem;
   font-style: normal;
-  font-weight: 500;
   line-height: 150%;
 }
 
@@ -398,7 +401,6 @@ svg{
   font-family: var(--font-family);
   font-size: 1rem;
   font-style: normal;
-  font-weight: 500;
   line-height: 150%;
 }
 
@@ -406,7 +408,6 @@ svg{
   font-family: var(--font-family);
   font-size: 0.88rem;
   font-style: normal;
-  font-weight: 500;
   line-height: 150%;
 }
 
@@ -414,7 +415,6 @@ svg{
   font-family: var(--font-family);
   font-size: 0.75rem;
   font-style: normal;
-  font-weight: 500;
   line-height: 155%;
 }
 
@@ -422,10 +422,8 @@ svg{
   font-family: var(--font-family);
   font-size: 0.62rem;
   font-style: normal;
-  font-weight: 500;
   line-height: 155%;
 }
-
 
 /* Medium screen (640px - 1024px) */
 @media screen and (min-width: 641px) and (max-width: 1024px) {
@@ -451,7 +449,6 @@ svg{
     font-size: 1rem;
     line-height: 150%;
   }
-
 }
 
 /* Small screen (< 640px) */
@@ -464,5 +461,4 @@ svg{
   .display-s {
     font-size: 1.5rem;
   }
-
 }
